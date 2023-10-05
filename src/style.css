@@ -1,3 +1,5 @@
+/*all*/
+
 body {
   font-family: "Poppins", sans-serif;
   background: black;
@@ -11,15 +13,28 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+
+.grid-2columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.img-responsive {
+  max-width: 100%;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
+/*header*/
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("../images/athenscity.jpg");
@@ -72,6 +87,41 @@ header a:visited {
   color: rebeccapurple;
 }
 
+/*main body*/
+main {
+  background-color: white;
+  color: black;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #272044;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+
+/*footer*/
 footer {
   color: wheat;
   background-image: linear-gradient(
@@ -82,7 +132,6 @@ footer {
 
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -117,6 +166,7 @@ footer a:visited {
   color: aqua;
 }
 
+/*small screen*/
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -132,5 +182,14 @@ footer a:visited {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
