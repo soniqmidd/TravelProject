@@ -6,6 +6,13 @@ body {
   color: wheat;
 }
 
+.gallery {
+  margin: 20px;
+  display: block;
+  padding: 3px;
+  width: 100%;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -263,5 +270,12 @@ footer a:visited {
 
   .embed {
     aspect-ratio: 16 / 9;
+  }
+
+  .gallery {
+    aspect-ratio: 1 /1;
+    margin: 0 auto;
+    display: block;
+    padding: 3px;
   }
 }
